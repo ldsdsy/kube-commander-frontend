@@ -1,38 +1,40 @@
-.App {
+.cluster-manager {
   text-align: center;
+  padding: 150px;
+  background-image: url('/public/images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.kubeconfig-form {
+  max-width: 500px;
+  margin: 40px auto; /* 调整为所需的上下边距 */
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #78a0a7; /* 青蓝色背景 */
+  border-radius: 15px; /* 更圆润的角度 */
+  color: white; /* 如果您想要文字颜色为白色 */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.kubeconfig-textarea{
+  width: 500px;
+  height: 100px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.kubeconfig-textarea:focus {
+  outline: 2px solid #95cecd; /* 更深的青蓝色 */
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submit-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
 }
